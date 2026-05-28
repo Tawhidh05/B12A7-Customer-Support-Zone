@@ -1,14 +1,14 @@
-// import { useState } from 'react'
-import './App.css'
+import './index.css'
+import Navbar from './components/Navbar/navbar'
 
 
 function App() {
-
-
   return (
-    <>
-  <h1>Hola Mundo</h1>
-    </>
+      <>
+        <div className="mx-[80px]">
+        <Navbar></Navbar>
+      </div>
+     </>
   )
 }
 

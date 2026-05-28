@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+    background-color: #F5F5F5;
+    font-family: "Inter", sans-serif;
+}
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
