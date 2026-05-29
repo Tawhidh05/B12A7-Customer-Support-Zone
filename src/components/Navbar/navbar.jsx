@@ -2,13 +2,13 @@ import React from 'react';
 
 const navbar = () => {
     return (
-        <div className="navbar bg-[#FFFFFF]">
-  <div className="flex-1">
+  <div className="flex px-20 navbar bg-[#FFFFFF]">
+  <div className="flex-1 pr-[50px] md:pr-[500px]">
     <a className="btn btn-ghost text-2xl font-bold text-[#130B2D]">CS — Ticket System</a>
   </div>
-  <div className="flex">
+  <div className="flex-2">
   <div className="text-[#000000] justify-center items-center">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal">
       <li><a href="">Home</a></li>
      <li><a href="">FAQ</a></li>
      <li><a href="">Changelog</a></li>
@@ -21,5 +21,6 @@ const navbar = () => {
 </div>
     );
 };
+
 
 export default navbar;

@@ -2,7 +2,6 @@
 @plugin "daisyui";
 
 * {
-    background-color: #F5F5F5;
     font-family: "Inter", sans-serif;
 }
 
@@ -13,3 +12,4 @@
   font-weight: auto;
   font-style: normal;
 }
+
