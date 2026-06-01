@@ -1,15 +1,19 @@
 import './index.css'
 import Navbar from './components/Navbar/navbar'
 import Banner from './components/Banner/banner'
+import Main from './components/Main/mainS'
+import TC from './components/Ticker/tc'
+
 
 
 function App() {
   return (
       <>
-        <div className="max-h-screen bg-[#F5F5F5]">
+        <div className="backdrop">
             <div className="">
                 <Navbar />
                 <Banner />
+                <Main/>
             </div>
         </div>
      </>
