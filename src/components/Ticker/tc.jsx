@@ -6,7 +6,7 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 const tc = () => {
     return (
         <div className=''>
-            <div className="card w-116 bg-white text-black card-sm shadow-md">
+            <div className="card w-full bg-white text-black card-xs shadow-md lg:card-sm">
             <div className="card-body">
                 <div className='flex justify-between pr-2'>
                 <h2 className="card-title">Login Issues - Can't Access Account</h2>
