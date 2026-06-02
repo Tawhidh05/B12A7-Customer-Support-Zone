@@ -27,8 +27,6 @@ const mainS = () => {
                     <h3 className="text-2xl font-semibold text-[#34485A] pb-4 mx-auto lg:mx-0">Task Status</h3>
                     {/* <h4 className="text-lg font-regular text-[#627382] mx-auto lg:mx-0">Select a ticket add to task</h4> */}
                     <SC/>
-                    <SC/>
-                    <SC/>
 
                 </div>
                 <div className="grid grid-cols-1 gap-3 max-w-xl pt-6 md:pt-12">
