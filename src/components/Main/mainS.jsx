@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import TC from "../Ticker/tc"
 import SC from "../cards/sc"
@@ -22,7 +23,7 @@ const mainS = () => {
                 </section>
             </div>
             {/* Right side */}
-            <section className="">
+            <section className="pb-[80px] max-w-2xl overflow-y-auto">
                 <div className="grid grid-cols-1 gap-3 max-w-xl">
                     <h3 className="text-2xl font-semibold text-[#34485A] pb-4 mx-auto lg:mx-0">Task Status</h3>
                     {/* <h4 className="text-lg font-regular text-[#627382] mx-auto lg:mx-0">Select a ticket add to task</h4> */}
@@ -35,6 +36,7 @@ const mainS = () => {
                     <RC/>
                 </div>
             </section>
+        
         </div>
     );
 };
