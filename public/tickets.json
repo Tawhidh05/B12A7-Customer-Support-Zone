@@ -1,0 +1,137 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still can't get access.",
+    "customer": "John Smith",
+    "priority": "HIGH",
+    "status": "Open",
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment Not Processing",
+    "description": "Customer's credit card payment keeps getting declined even though the card details are correct and the bank confirmed no issues.",
+    "customer": "Sarah Johnson",
+    "priority": "HIGH",
+    "status": "In Progress",
+    "createdAt": "2024-01-16"
+  },
+  {
+    "id": "#1003",
+    "title": "App Crashing on Startup",
+    "description": "The mobile app crashes immediately after the splash screen on Android devices running version 12 and above.",
+    "customer": "Michael Brown",
+    "priority": "HIGH",
+    "status": "Open",
+    "createdAt": "2024-01-17"
+  },
+  {
+    "id": "#1004",
+    "title": "Email Notifications Not Sending",
+    "description": "Customer is not receiving any email notifications for order updates. Checked spam folder but nothing is there.",
+    "customer": "Emily Davis",
+    "priority": "MEDIUM",
+    "status": "In Progress",
+    "createdAt": "2024-01-18"
+  },
+  {
+    "id": "#1005",
+    "title": "Wrong Item Delivered",
+    "description": "Customer received a completely different product than what was ordered. Requesting an immediate replacement.",
+    "customer": "James Wilson",
+    "priority": "HIGH",
+    "status": "Open",
+    "createdAt": "2024-01-19"
+  },
+  {
+    "id": "#1006",
+    "title": "Slow Dashboard Loading",
+    "description": "The admin dashboard takes more than 30 seconds to load. This is affecting daily productivity significantly.",
+    "customer": "Olivia Martinez",
+    "priority": "MEDIUM",
+    "status": "In Progress",
+    "createdAt": "2024-01-20"
+  },
+  {
+    "id": "#1007",
+    "title": "Unable to Upload Profile Picture",
+    "description": "Customer gets an error message every time they try to upload a profile picture. Tried different formats (JPG, PNG) but none work.",
+    "customer": "William Taylor",
+    "priority": "LOW",
+    "status": "Closed",
+    "createdAt": "2024-01-21"
+  },
+  {
+    "id": "#1008",
+    "title": "Subscription Plan Not Upgrading",
+    "description": "Customer paid for the premium plan upgrade but the account still shows the free tier with no access to premium features.",
+    "customer": "Sophia Anderson",
+    "priority": "HIGH",
+    "status": "Open",
+    "createdAt": "2024-01-22"
+  },
+  {
+    "id": "#1009",
+    "title": "Dark Mode Not Working",
+    "description": "The dark mode toggle in settings does not apply any changes to the interface. The app stays in light mode.",
+    "customer": "Liam Thomas",
+    "priority": "LOW",
+    "status": "Closed",
+    "createdAt": "2024-01-23"
+  },
+  {
+    "id": "#1010",
+    "title": "Data Export Failing",
+    "description": "When trying to export reports as CSV or PDF, the download starts but the file is always empty or corrupted.",
+    "customer": "Charlotte Jackson",
+    "priority": "MEDIUM",
+    "status": "In Progress",
+    "createdAt": "2024-01-24"
+  },
+  {
+    "id": "#1011",
+    "title": "Two-Factor Authentication Broken",
+    "description": "Customer enabled 2FA but is no longer receiving the SMS verification code. Now completely locked out of the account.",
+    "customer": "Noah White",
+    "priority": "HIGH",
+    "status": "Open",
+    "createdAt": "2024-01-25"
+  },
+  {
+    "id": "#1012",
+    "title": "Search Filter Not Working",
+    "description": "Applying filters in the product search returns incorrect results or sometimes returns no results at all despite matching products existing.",
+    "customer": "Ava Harris",
+    "priority": "MEDIUM",
+    "status": "Closed",
+    "createdAt": "2024-01-26"
+  },
+  {
+    "id": "#1013",
+    "title": "Invoice Not Generating",
+    "description": "After completing a purchase, the system fails to generate an invoice. Customer needs the invoice for business expense reporting.",
+    "customer": "Ethan Clark",
+    "priority": "MEDIUM",
+    "status": "In Progress",
+    "createdAt": "2024-01-27"
+  },
+  {
+    "id": "#1014",
+    "title": "Account Deletion Not Working",
+    "description": "Customer has submitted an account deletion request three times but the account remains active with no confirmation email received.",
+    "customer": "Isabella Lewis",
+    "priority": "LOW",
+    "status": "Open",
+    "createdAt": "2024-01-28"
+  },
+  {
+    "id": "#1015",
+    "title": "API Integration Timeout",
+    "description": "Third-party API integration keeps timing out after 10 seconds. Customer needs the timeout limit extended or the API response optimized.",
+    "customer": "Mason Robinson",
+    "priority": "HIGH",
+    "status": "In Progress",
+    "createdAt": "2024-01-29"
+  }
+]
