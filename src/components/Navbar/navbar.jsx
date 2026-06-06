@@ -7,9 +7,9 @@ const navbar = () => {
     return (
 <div>
 
-<div className="navbar bg-[#FFFFFF]">
+<div className="navbar bg-[#FFFFFF] px-6 lg:px-12">
   <div className="flex-1">
-    <a className="btn btn-ghost text-md lg:text-2xl font-bold text-[#130B2D]">CS — Ticket System</a>
+    <a className="bg-white text-md lg:text-2xl font-bold text-[#130B2D]">CS — Ticket System</a>
   </div>
   <div className="flex-none">
   <div className="text-[#000000] ">

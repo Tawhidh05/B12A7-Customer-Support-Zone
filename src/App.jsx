@@ -7,12 +7,14 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [ticketData, setTicketData] = useState([]);
+  const [inProgressData, setInProgressData] = useState([]);
+  const [resolvedData, setResolvedData] = useState([]);
 
   useEffect(() => {
     fetch('/tickets.json')
       .then((res) => res.json())
       .then((data) => {
-        // console.log('✅ Tickets:', data);              
+        // console.log('Tickets:', data);              
         setTicketData(data);              
       })
       .catch((err) => console.error(' Error:', err));
@@ -23,10 +25,14 @@ function App() {
       <div className="backdrop">
         <div className="">
           <Navbar />
-          <Banner />
-          {/* <Suspense fallback={<div className='text-center py-10'>loading...</div>}> */}
-            <Main ticketsData={ticketData} />
-          {/* </Suspense> */}
+          <Banner inProgressData={inProgressData} resolvedData={resolvedData} />
+            <Main
+            ticketsData={ticketData}
+            setInProgressData={setInProgressData}
+            inProgressData={inProgressData}
+            setResolvedData={setResolvedData}
+            resolvedData={resolvedData}
+          />
           <Footer />
         </div>
       </div>
