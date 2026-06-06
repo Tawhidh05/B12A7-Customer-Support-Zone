@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TC from "../Ticker/tc";
 import SC from "../cards/sc";
 import RC from "../cards/rc";
+import { toast } from 'react-toastify'; 
 
 const mainS = ({
   ticketsData    = [], 
@@ -11,7 +12,8 @@ const mainS = ({
   resolvedData   = [],  
 }) => {
 
-  const [toggleProgress, setToggleProgress] = useState({});
+const [toggleProgress, setToggleProgress] = useState({});
+const [completedData,  setCompletedData]  = useState({}); 
 
   const handleToggle = (id, ticket) => {
     if (toggleProgress[id]) return; // prevent re-click
@@ -22,8 +24,20 @@ const mainS = ({
     }));
 
     setInProgressData((prev) => [...prev, ticket]);
+    toast.warning(`"${ticket.title}" moved to In Progress`);
   };
 
+    const handleComplete = (ticket) => {
+    // mark as completed in TC card
+    setCompletedData((prev) => ({
+      ...prev,
+      [ticket.id]: true 
+    }));
+
+    setInProgressData((prev) => prev.filter((t) => t.id !== ticket.id));
+    setResolvedData((prev) => [...prev, ticket]);
+    toast.success(`"${ticket.title}" has been Resolved!`);
+}
 
     return ( 
         <div className="main max-w-full flex flex-col lg:flex-row">
@@ -35,7 +49,8 @@ const mainS = ({
                         tickets={ticketsData}
                         toggleProgress={toggleProgress}
                         handleToggle={handleToggle}
-                        inProgressData={inProgressData} 
+                        inProgressData={inProgressData}
+                        completedData={completedData}  
                         />                
                 </section>
             </div>
@@ -49,6 +64,7 @@ const mainS = ({
                     inProgressData={inProgressData} 
                     setResolvedData={setResolvedData}
                     setInProgressData={setInProgressData} 
+                    handleComplete={handleComplete}
                     />
 
                 </div>

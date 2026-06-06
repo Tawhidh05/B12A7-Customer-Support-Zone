@@ -4,6 +4,9 @@ import Main from './components/Main/mainS';
 import Banner from './components/Banner/banner';
 import Footer from './components/Footer/footer';
 import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';  
+
 
 function App() {
   const [ticketData, setTicketData] = useState([]);
@@ -36,6 +39,7 @@ function App() {
           <Footer />
         </div>
       </div>
+        <ToastContainer position="bottom-right" autoClose={2000} />
     </>
   );
 }
